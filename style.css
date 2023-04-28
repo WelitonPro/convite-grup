@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3b3b3b;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 25px;
+    background-color: #3f3f3f;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.389);
+    position: relative;
+    
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #06d62e;
+    border-right: 20px solid #06d62e;
+}
+
+
+
+.icon {
+    margin-bottom: 50px;
+}
+
+.icon img {
+    width: 250px;
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 35px;
+    position: relative;
+    color: #06d62e;
+}
+
+.content h3::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 90px;
+    background-color: #c0c0c0;
+    bottom: 3px;
+    border-radius: 100%;
+}
+
+.content h2 {
+    font-size: 20px;
+    position: relative;
+    color: #06d62e;
+}
+
+.content p {
+    color: #b7b7b7;
+}
+
+#read_button {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #06d62e;
+    color: #313131;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#read_button:hover {
+    background-color: transparent;
+    color: #06d62e;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-widht: 1024px) {
+    #img {
+        display: none;
+    }
+}
+
+@media screen and (max-widht: 500px) {
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-widht: 500px) {
+    #container {
+        width: 500px;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+}
